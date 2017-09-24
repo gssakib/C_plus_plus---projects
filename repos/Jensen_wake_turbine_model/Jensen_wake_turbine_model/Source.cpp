@@ -14,8 +14,8 @@ struct turbine
 	//defining turbine characteristic variable 
 
 
-	const double r_o; //rotor radius
-	double a; //axial induction factor
+	 double r_o = 0; //rotor radius 
+	double a = 0; //axial induction factor
 
 
 };
@@ -42,9 +42,8 @@ double wake_velocity_in(double& u, double& a, double& r_o, double& r) {
 }
 
 int main() {
+	turbine t1;
 	double u = 0; //incoming wind speed
-	double a = 0; //axial induction factor
-	double r_o = 0; // rotor radius
 	double x = 0; // downwind distance from turbine
 	double r = 0; //wake radius
 	double v = 0; //wake velocity inside turbine
@@ -54,17 +53,17 @@ int main() {
 	cout << "This program utilizes Jensen Model to estimate wake radius(r) and wake velocity inside turbine(v)." << endl;
 	cout << "Please input the following parameters in meteric units" << endl << endl;
 	cout << "Enter Incoming wind speed (u): "; cin >> u; 
-	cout << "Enter Axial induction factor (a): "; cin >> a; 
-	cout << "Enter Rotor radius (r_o): "; cin >> r_o; 
+	cout << "Enter Axial induction factor (a): "; cin >> t1.a; 
+	cout << "Enter Rotor radius (r_o): "; cin >> t1.r_o; 
 	cout << "Enter Downwind distance from turbine (x): "; cin >> x;
 	cout << endl;
 
 	////calculating the resutls
-	r = wake_radius( r_o,  alpha,  x);
+	r = wake_radius( t1.r_o,  alpha,  x);
 
-	v_o = wake_vel_behind(a, u);
+	v_o = wake_vel_behind(t1.a, u);
 
-	v = wake_velocity_in(u, a, r_o, r);
+	v = wake_velocity_in(u, t1.a, t1.r_o, r);
 
 	//outputting the resutls
 	cout << "wake radius(r): " << r << " m" << endl;
