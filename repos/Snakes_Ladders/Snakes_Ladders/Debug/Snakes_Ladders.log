@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\gazi\source\repos\snakes_ladders\snakes_ladders\source.cpp(11): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+  Snakes_Ladders.vcxproj -> C:\Users\gazi\source\repos\Snakes_Ladders\Debug\Snakes_Ladders.exe
+  Snakes_Ladders.vcxproj -> C:\Users\gazi\source\repos\Snakes_Ladders\Debug\Snakes_Ladders.pdb (Partial PDB)
