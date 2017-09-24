@@ -1,42 +1,28 @@
-/* return structure variables: add english distances */
+/* static local variables */
 #include<iostream>
 #include<string>
-#include<cmath>
 using namespace std;
 
-struct Distance // english distance structure
-{
-	int feet; float inches;
-};
-
-// declarations
-Distance addengl(Distance d1, Distance d2);
-void engldisp(Distance d);
+// function declaration 
+double getavg(double val);
 
 int main()
 {
-	Distance d1, d2, d3; // define three Distance structure varaibles
-						 // get two distances from user
-	cout << "Enter feet: "; cin >> d1.feet; cout << "Enter inches: "; cin >> d1.inches;
-	cout << "Enter feet: "; cin >> d2.feet; cout << "Enter inches: "; cin >> d2.inches;
-	d3 = addengl(d1, d2); // d3 = d1+d2 
-	engldisp(d1); cout << " + "; engldisp(d2); cout << " = "; engldisp(d3); cout << endl;
-
+	double val = 1;
+	while (val != 0)
+	{
+		cout << "Enter a real number: ";
+		cin >> val;
+		cout << "The averaged value is: " << getavg(val) << endl;
+	}
 	system("pause");
 }
 
-// add two Distance variables, and retrun the sum 
-Distance addengl(Distance d1, Distance d2)		// function declarator 
+// function definition 
+double getavg(double val)		// function declarator 
 {
-	double totalinches = d1.feet * 12 + d2.feet * 12 + d1.inches + d2.inches;
-
-	Distance d3;
-	d3.feet = totalinches / 12; d3.inches = fmod(totalinches, 12);
-	return d3;
+	static double sum = 0., count = 0.;
+	sum += val; count++;
+	return sum / (count + 1.e-19);
 }
 
-// Display distance in feet and inches
-void engldisp(Distance d)
-{
-	cout << d.feet << "\'-" << d.inches << "\"";
-}
