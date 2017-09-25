@@ -54,13 +54,15 @@ int main() {
 	while (decision)
 	{
 		
-		cout << "Enter 1st fraction: ";
-		getline(cin, frac1);
+		cout << "Enter 1st fraction: "; 
+		
+	   getline(cin, frac1);
 
+		cout << endl;
 		cout << "Enter 2nd fraction: ";
 		getline(cin, frac2);
 
-		
+		cout << endl;
 
 		f.In(frac1, frac2);
 
@@ -68,7 +70,11 @@ int main() {
 		cout << endl;
 
 		cout << "Do you want to do another one ? Enter 1 for yes, and 0 for no..........";
+		
+
 		cin >> decision;
+		cout << endl;
+		
 	}
 
 
