@@ -1,0 +1,4 @@
+﻿  Source.cpp
+c:\users\gazi\source\repos\inheritance_prac\inheritance_prac\source.cpp(39): error C2248: 'Distance::feet': cannot access private member declared in class 'Distance'
+  c:\users\gazi\source\repos\inheritance_prac\inheritance_prac\source.cpp(11): note: see declaration of 'Distance::feet'
+  c:\users\gazi\source\repos\inheritance_prac\inheritance_prac\source.cpp(9): note: see declaration of 'Distance'
