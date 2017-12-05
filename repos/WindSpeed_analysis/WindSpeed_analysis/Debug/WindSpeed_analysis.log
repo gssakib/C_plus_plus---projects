@@ -1,5 +1,9 @@
 ﻿  Source.cpp
-c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(138): warning C4553: '==': operator has no effect; did you intend '='?
-c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(142): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(209): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(213): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(319): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(323): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(373): warning C4018: '<': signed/unsigned mismatch
+c:\users\gazi\source\repos\windspeed_analysis\windspeed_analysis\source.cpp(397): warning C4018: '<': signed/unsigned mismatch
   WindSpeed_analysis.vcxproj -> C:\Users\gazi\source\repos\WindSpeed_analysis\Debug\WindSpeed_analysis.exe
   WindSpeed_analysis.vcxproj -> C:\Users\gazi\source\repos\WindSpeed_analysis\Debug\WindSpeed_analysis.pdb (Partial PDB)
